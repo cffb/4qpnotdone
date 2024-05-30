@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="login">
+            <div class="signup">    
+                <img src="images/logo.png" alt="nice">
+                <legend id="title">SIGN UP</legend>
+                <br>
+                
+                <div class="input-group">
+                    <label for="username">First Name:<span class="required"></span></label>
+                    <input type="text" id="username" name="username" onblur="usernameb()" placeholder="Your Name.." required>
+                </div>
+
+                <div class="input-group">
+                    <label for="username2">Last Name:<span class="required"></span></label>
+                    <input type="text" id="username2" name="username2" onblur="userName()" placeholder="Your Name.." required>
+                </div>
+
+                <div class="input-group">
+                    <label>Gender:<span class="required"></span></label>
+                    <div class="gender-options">
+                        <input type="radio" id="gender1" name="gender" value="male" onblur="gendr()" required>
+                        <label for="gender1">Male</label>
+                        
+                        <input type="radio" id="gender2" name="gender" value="female" onblur="gendr()" required>
+                        <label for="gender2">Female</label>
+                        
+                        <input type="radio" id="gender3" name="gender" value="prefer_not_to_say" onblur="gendr()" required>
+                        <label for="gender3">Prefer not to say</label>
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <label for="email">Email Address:<span class="required"></span></label>
+                    <input type="email" id="email" name="email" onblur="emailb()" placeholder="Email.." required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="password">Password:<span class="required"></span></label>
+                    <input type="password" id="password" name="password" onblur="pword()" placeholder="Password.." required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="contactnn">Contact Number:</label>
+                    <input type="text" id="contactnn" name="contactnn" onblur="contactn()" placeholder="09..">
+                </div>
+                
+                <div class="input-group">
+                    <label for="interest">Why do you support this campaign? <span class="required"></span></label>
+                    <textarea name="interest" id="interest" cols="70" rows="7" onblur="comments()" required></textarea>
+                </div>
+                
+                <div class="input-group">
+                    <input type="submit" value="Sign in" id="end">
+                </div>
+            </div>
+        </form>
+        
+        <div class="box">
+            <img src="images/logo.png" alt="">
+        </div>
+    </div>
+    
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
